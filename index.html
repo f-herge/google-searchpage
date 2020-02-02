@@ -4,61 +4,69 @@
     <meta charset="utf-8">
     <title>build this webpage - Google Search</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <a href="https://www.google.com"><img src="Images/google-logo.svg"></a>
-        <form action=""">
-            <input type="text" name="search" placeholder="build this webpage">
-            <button type="submit"><img src="#"></button>
-        </form>
-        <a href="#"></a>
-        <a href="#">Sign in</a>
-        <nav>
-            <a href="#">All</a>
-            <a href="#">News</a>
-            <a href="#">Maps</a>
-            <a href="#">Videos</a>
-            <a href="#">Shopping</a>
-            <a href="#">More</a>
-            <a href="#">Settings</a>
-            <a href="#">Tools</a>
+    <header id="top-bar">
+        <div id="top-bar-1">
+            <a href="https://www.google.com"><img class="google-logo" src="Images/google-logo.svg"></a>
+            <form action="">
+                <input type="text" name="search" placeholder="build this webpage">
+                <button type="submit"></button>
+            </form>
+            <div class="right-justified">
+                <a id="grid-button" href="#"></a>
+                <a class="sign-in" href="#">Sign in</a>    
+            </div>
+        </div>
+        <nav id="top-bar-2">
+            <a class="result-type all-results current-type" href="#">All</a>
+            <a class="result-type news-results" href="#">News</a>
+            <a class="result-type maps-results" href="#">Maps</a>
+            <a class="result-type video-results" href="#">Videos</a>
+            <a class="result-type shopping-results" href="#">Shopping</a>
+            <a class="result-type more-results" href="#">More</a>    
+            <div class="right-justified">
+                <a id="settings" href="#">Settings</a>
+                <a id="tools" href="#">Tools</a>    
+            </div>
         </nav>
     </header>
 
     <main>
 
-        <p>About 124,000,000 results (0.52 seconds)</p>
+        <p id="result-stats">About 124,000,000 results (0.52 seconds)</p>
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.wix.com/</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite><span class="advertisement">Ad &#8231</span> www.wix.com/</cite><span class="dropdown"></span></div>
                     <h2>Build Your Own Website | Design Your Own Site With Wix</h2>
                 </a>
             </header>
             <p>It's Easy To Look Professional For Free! Market leaders. 100s of Apps. Free <strong>website</strong> builder. Customizable online store. Easy-to-add blog. 1000s of free images. Multiple payment methods. Easy drag n’ drop. SEO wizard. Advanced image editor.</p>
-            <section>
-                <a href=""><h3>Customize Easily</h3></a>
-                <p>Just Choose a Template And Start Creating in Minutes!</p>
-            </section>
-            <section>
-                <a href=""><h3>100s of Free Templates</h3></a>
-                <p>Choose One and Start Designing Now <br>
-                    Easy to Customize, no Coding Needed</p>
-            </section>
+            <div class="extended-article">
+                <section>
+                    <h3><a href="">Customize Easily</a></h3>
+                    <p>Just Choose a Template And Start Creating in Minutes!</p>
+                </section>
+                <section>
+                    <h3><a href="">100s of Free Templates</a></h3>
+                    <p>Choose One and Start Designing Now <br>
+                        Easy to Customize, no Coding Needed</p>
+                </section>
+            </div>
         </article>
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.top5-websitebuilders.com/</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite><span class="advertisement">Ad &#8231</span> www.top5-websitebuilders.com/</cite><span class="dropdown"></span></div>
                     <h2>5 Best Free Website Builders | Build Your Website in 3 Steps‎</h2>
                 </a>
             </header>
-            <p>2020 User's Choice. Customizable Online Store. Drag & Drop Editor. Top Deals In One Place! It's Easy. Customizable Templates. Mobile Optimized. Built-in SEO. Social Media Compatible. Design Flexibility. 24/7 Support. Price Comparison. Free Hosting.</p>
-            <div>
+            <p>2020 User's Choice. Customizable Online Store. Drag & Drop Editor. Top Deals In One Place! It's Easy. Customizable Templates. Mobile Optimized. Built-in SEO. Social Media Compatible. Design Flexibility. 24/7 Support. Price Comparison. Free Hosting.</pclass="content">
+            <div class="extra-links">
                 <a href="#">Blog Builders</a> &#8231
                 <a href="#">Portfolio Builders</a> &#8231
                 <a href="#">Domain & Hosting</a> &#8231
@@ -67,9 +75,9 @@
         </article>
 
         <article>
-            <div>
+            <div class="featured-snippet">
                 <blockquote>
-                    <h2>1. TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION:</h2>
+                    <h3>1. TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION:</h3>
                     <ol>
                         <li>Log in to your hosting account.</li>
                         <li>Go to your control panel.</li>
@@ -78,22 +86,22 @@
                     </ol>
                 </blockquote>
                 <header>
-                    <a href="#">
-                        <cite>christine-27.github.io › google-homepage</cite>
+                    <a class="article-header" href="#">
+                        <div class="clickable-area-fix"><cite>christine-27.github.io › google-homepage</cite></div>
                         <h2>build this webpage - GitHub Pages‎</h2>
                     </a>    
                 </header>
             </div>
-            <footer>
-                <a href="#">About Featured Snippets</a>
-                <a href="#">Feedback</a>
+            <footer class="feedback">
+                <a class="icon icon-questionmark" href="#">About Featured Snippets</a>
+                <a class="icon icon-feedback" href="#">Feedback</a>
             </footer>
         </article>
 
         <article>
             <header>
-                <a href="#">
-                    <cite>victor-lf.github.io › google-search-results</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>victor-lf.github.io › google-search-results</cite><span class="dropdown"></span></div>
                     <h2>build this webpage - GitHub Pages‎‎</h2>
                 </a>
             </header>
@@ -102,41 +110,41 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>arstechnica.com › information-technology › 2013/07 › with-zero-cod...</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>arstechnica.com › information-technology › 2013/07 › with-zero-cod...</cite><span class="dropdown"></span></div>
                     <h2>With zero coding experience, artist building 180 webpages in ...</h2>
                 </a>
             </header>
             <p><span class="date"><time datetime="2013-07-26">26 Jul 2013</time> - </span>117 days ago, having never done any programming in her life, Jennifer Dewalt built her first <strong>webpage</strong>. The next day, she built another, and she ...</p>
         </article>
 
-        <section>
+        <article id="videos" class="clearfix">
             <header>
                 <h2>Videos</h2>
             </header>
-            <article>
+            <section>
                 <a href="">
-                    <img src="thumbnail-1">
+                    <img class="video-thumbnail" src="images/video1.png">
                     <h3>How To Build A Website From Scratch [IN 20 MINS]</h3>
                 </a>
                 <footer>
                     <cite>Create WP Site</cite>
                     <p>YouTube<span class="date"> - <time datetime="2016-03-31">31 Mar 2016</time></span></p>
                 </footer>
-            </article>
-            <article>
+            </section>
+            <section>
                 <a href="">
-                    <img src="thumbnail-2">
+                    <img class="video-thumbnail" src="images/video2.png">
                     <h3>Welcome to the web! (video) | Hour of Code</h3>
                 </a>
                 <footer>
                     <cite>Khan Academy Computing</cite>
                     <p>Khan Academy<span class="date"> - <time datetime="2014-11-17">17 Nov 2014</time></span></p>
                 </footer>
-            </article>
-        </section>
+            </section>
+        </article>
 
-        <section>
+        <article class="common-questions">
             <div>
                 <header>
                     <h2>People also ask</h2>
@@ -148,15 +156,15 @@
                     <li>How do I create a free website on Google?</li>
                 </ul>
             </div>
-            <footer>
-                <a href="#">Feedback</a>
+            <footer class="feedback">
+                <a href="#"><em>Feedback</em></a>
             </footer>
-        </section>
+        </article>
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.websitebuilderexpert.com › building-websites</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.websitebuilderexpert.com › building-websites</cite><span class="dropdown"></span></div>
                     <h2>How to Build a Website: the Step-by-Step Guide to Easy Setup ...</h2>
                 </a>
             </header>
@@ -165,8 +173,8 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.buildthis.io › make-a-website</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.buildthis.io › make-a-website</cite><span class="dropdown"></span></div>
                     <h2>How to Build A Website: A-to-Z Beginner Guide - BuildThis.io</h2>
                 </a>
             </header>
@@ -175,8 +183,8 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.squarespace.com</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.squarespace.com</cite><span class="dropdown"></span></div>
                     <h2>Squarespace: Build a Website – Website Builder</h2>
                 </a>
             </header>
@@ -185,8 +193,8 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.webnode.co.uk</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.webnode.co.uk</cite><span class="dropdown"></span></div>
                     <h2>Webnode: Create a free website easily | Free website builder</h2>
                 </a>
             </header>
@@ -195,8 +203,8 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.google.com › Google My Business › How It Works</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.google.com › Google My Business › How It Works</cite><span class="dropdown"></span></div>
                     <h2>Free Website Builder For Your Business - Google My Business</h2>
                 </a>
             </header>
@@ -205,127 +213,101 @@
 
         <article>
             <header>
-                <a href="#">
-                    <cite>www.create.net</cite>
+                <a class="article-header" href="#">
+                    <div class="clickable-area-fix"><cite>www.create.net</cite><span class="dropdown"></span></div>
                     <h2>Create A Website | UK Website Builder | Create.net</h2>
                 </a>
             </header>
             <p>Learn how to make your own mobile friendly, beautiful <strong>website</strong> with Create's trusted UK <strong>website</strong> ... <strong>Building</strong> a <strong>website</strong> shouldn't need to be time consuming.</p>
         </article>
 
-        <section>
+        <section class="related-websites">
             <div>
                 <header>
                     <h2>Related search</h2>
                     <p>Best free website</p>
-                    <a href="#">View 2+ more</a>
+                    <a id="view-more" href="#">View 2+ more</a>
                 </header>
-                <div>
+                <nav>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/wordpress.png">
                         <h3>WordPress</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/weebly.png">
                         <h3>Weebly</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/webflow.png">
                         <h3>Webflow</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/jimdo.png">
                         <h3>Jimdo</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/webnode.png">
                         <h3>Webnode</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/strikingly.png">
                         <h3>Strikingly</h3>
                     </a>
                     <a href="#">
-                        <img src="Images/">
+                        <img src="images/imcreator.png">
                         <h3>IM Creator</h3>
                     </a>
-                </div>
+                </nav>
             </div>
-            <footer>
-                <a href="#">Feedback</a>
+            <footer class="feedback">
+                <a href="#"><em>Feedback</em></a>
             </footer>
         </section>
 
-        <section>
+        <article class="related-searches">
             <h2>Searches related to build this webpage</h2>
             <ul>
                 <li><a href="#"><strong>website</strong></a></li>
                 <li><a href="#"><strong>how to create a website pdf</strong></a></li>
                 <li><a href="#"><strong>creating a website for your business</strong></a></li>
+            </ul>
+            <ul>
                 <li><a href="#">build <strong>a website everyday</strong></a></li>
                 <li><a href="#"><strong>creating a website 101</strong></a></li>
                 <li><a href="#"><strong>website building software</strong></a></li>
             </ul>
-        </section>
+        </article>
 
-        <footer>
-            <nav>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>1</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>2</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>3</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>4</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>5</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>6</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>7</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>8</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>9</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>10</h3>
-                </a>
-                <a href="#">
-                    <img src="Images/">
-                    <h3>Next</h3>
-                </a>
-            </nav>
+        <footer id="page-selection">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><span class="nav-logo start"></td>
+                        <td><span class="nav-logo mid current"></span>1</td>
+                        <td><a href="#"><span class="nav-logo mid"></span>2</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>3</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>4</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>5</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>6</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>7</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>8</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>9</a></td>
+                        <td><a href="#"><span class="nav-logo mid"></span>10</a></td>
+                        <td id="nav-end"><a href="#"><span class="nav-logo end"></span>Next</a></td>                        
+                    </tr>
+                </tbody>
+            </table>
         </footer>
 
     </main>
 
-    <footer>
+    <footer id="bottom-bar">
         <div class="location">
             <p>United Kingdom</p>
-            <p><b>NW1, London</b> - From your Internet address - <a href="#">Use precise location</a> - <a href="#">Learn more</a></p>
-        </div style="position: relative">
+            <p id="specific-location"><span id="postcode"><b>NW1, London</b></span> - From your Internet address - <a href="#">Use precise location</a> - <a href="#">Learn more</a></p>
+        </div>
     
-        <div>
+        <div class="bottom-nav">
             <a href="#">Help</a>
             <a href="#">Send feedback</a>
             <a href="https://policies.google.com/privacy?fg=1">Privacy</a>

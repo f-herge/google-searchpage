@@ -1,0 +1,594 @@
+/****** GENERAL STYLES *********/
+
+body {
+    color: #3C4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+em {
+    font-style: italic;
+}
+
+b {
+    font-weight: 700;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+strong {
+    font-weight: 700;
+}
+
+p, blockquote {
+    line-height: 1.57;
+}
+
+blockquote {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 20px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    line-height: 26px;
+}
+
+/****** HEADER ********/
+
+/* Formatting */
+
+#top-bar {
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 20px;
+    min-width: 1101px;
+}
+
+#top-bar-1 a, #top-bar-1 form, #top-bar-1 div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#top-bar-2 {
+    margin-top: 10px;
+    margin-left: 156px;
+    font-size: 13px;
+    line-height: 16px;
+    width: 625px;
+}
+
+#top-bar-2 a {
+    display: inline-block;
+    color: #5f6368;
+}
+
+#top-bar-2 a:hover {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.right-justified {
+    float: right;
+}
+
+/* Logo */
+
+.google-logo {
+    width: 92px;
+    padding: 4px 28px 0 20px;
+}
+
+/* Searchbar */
+
+form {
+    width: 638px;
+    border: 1px solid #e6e3e3;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 530px;
+    margin: 4px 24px 4px 20px;
+    font-size: 16px;
+    border: none;
+    padding: 9px 0;
+}
+
+form:hover, form:focus-within {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+button[type="submit"] {
+    background: url("../google-homepage/images/magnifier.png") center / contain no-repeat;
+    width: 28px;
+    height: 28px;
+    border: none;
+    margin: 0 0 2px 20px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* Sign-in and grid button */
+
+#grid-button {
+    content: "";
+    background: url("images/grid.png") 0 0 / contain no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+}
+
+#grid-button:hover {
+    background: url("images/grid-highlight.png") center / contain no-repeat;
+}
+
+.sign-in {
+    color: white;
+    background-color: rgb(26, 115, 232);
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    cursor: default;
+    padding: 10px 24px;
+    margin: 5px 30px 0 10px;
+    line-height: 16px;
+}
+
+.sign-in:hover {
+    color: white;
+    text-decoration: none;
+    background-color:rgb(66, 133, 244);
+    box-shadow: 0 2px 3px 0 rgba(32,33,36,0.28);
+}
+
+/* Result Type Navigation */
+
+.result-type {
+    padding: 16px 12px 12px 31px;
+}
+
+#settings {
+    padding: 16px 12px 12px 10px;
+}
+
+#tools {
+    line-height: 19px;
+    padding: 4px 11px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+#tools:hover {
+    background: rgb(247, 246, 246);
+    border: 1px solid rgb(212, 212, 212);
+    color: #5f6368;
+}
+
+.all-results {
+    background: url("images/all.png") 10px 15px / 16px no-repeat;
+    color: #4285f4;
+}
+
+.news-results {
+    background: url("images/news.png") 10px 16px / 16px no-repeat;
+}
+
+.maps-results {
+    background: url("images/maps.png") 10px 14px / 17px no-repeat;
+    /* background-size: 16px;
+    background-position: 10px 14px; */
+}
+
+.video-results {
+    background: url("images/videos.png") 10px 15px / 15px no-repeat;
+    /* background-size: 16px;
+    background-position: 10px 14px; */
+}
+
+.shopping-results {
+    background: url("images/shopping.png") 10px 15px / 16px no-repeat;
+    /* background-size: 16px;
+    background-position: 10px 14px; */
+}
+
+.more-results {
+    background: url("images/more.png") 3px 16px / 6px 14px no-repeat;
+    padding-left: 14px;
+}
+
+.current-type {
+    border-bottom: 3px solid rgb(26, 115, 232);
+}
+
+/****** SEARCH RESULTS - MAIN BODY *********/
+
+/* General Styles */
+
+main {
+    margin-left: 166px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.article-header:hover {
+    text-decoration: none;
+}
+
+.article-header:hover h2 {
+    text-decoration: underline;
+}
+
+.clickable-area-fix {
+    display: inline-block;
+}
+
+.date, #result-stats {
+    color: #70757a;
+}
+
+cite {
+    color: #3C4043;
+    line-height: 21px;
+}
+
+/* Include ones anchor hrefs are populated
+
+a:visited {
+    color: #609;
+} */
+
+/* Feedback Footer */
+
+.feedback {
+    text-align: right;
+    margin-top: 3px;
+}
+
+.feedback a {
+    font-size: 12px;
+    color: #70757a
+}
+
+.icon {
+    padding-left: 22px;
+    margin-left: 24px;
+}
+
+.icon-questionmark {
+    background: url("images/snippets.png") top left / contain no-repeat;
+}
+
+.icon-feedback {
+    background: url("images/feedback.png") top left / 13px no-repeat;
+}
+
+/* Search Result Statistics */
+
+#result-stats {
+    margin: 10px 0px 20px;
+}
+
+/* Standard Result */
+
+article {
+    width: 600px;
+    margin-bottom: 27px;
+}
+
+.advertisement {
+    color: rgb(32, 33, 36);
+    font-weight: 700;
+}
+
+.dropdown {
+    /* content: ""; */
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid rgb(60, 64, 67);
+}
+
+.dropdown:hover {
+    cursor: default;
+}
+
+/* Extended Result */
+
+.extended-article {
+    width: 700px;
+}
+
+.extended-article section {
+    position: relative;
+    left: 28px;
+    display: inline-block;
+    margin-top: 16px;
+    margin-right: 13px;
+    width: 294px;
+}
+
+/* Result w/ Additional Links */
+
+.extra-links {
+    margin-top: 4px;
+}
+
+/* Result w/ Featured Snippet */
+
+.featured-snippet {
+    position: relative;
+    right: 16px;
+    width: inherit;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Video Results */
+
+#videos {
+    margin-bottom: 40px;
+}
+
+.video-thumbnail {
+    width: 205px;
+}
+
+#videos h2 {
+    color: #222;
+    margin-bottom: 12px;
+}
+
+#videos section {
+    position: relative;
+    right: 20px;
+    float: left;
+    width: 205px;
+    height: 300px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+#videos h3 {
+    font-size: 16px;
+    padding: 12px 16px;
+}
+
+#videos footer {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#videos cite {
+    font-size: 14px;
+    color: #808080;
+}
+
+#videos p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Result w/ Common Questions */
+
+.common-questions div {
+    position: relative;
+    right: 16px;
+    width: 632px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+}
+
+.common-questions header {
+    padding: 9px 16px;
+}
+
+.common-questions li {
+    font-size: 16px;
+    padding:  9px 0px 9px 16px;
+    border-top: 1px solid rgb(223, 225, 229);
+    width: 616px
+}
+
+/* Result w/ Websites Related to Search */
+
+.related-websites {
+    width: 626px;
+}
+
+.related-websites div {
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    padding-left: 16px;
+    width: inherit;
+    position: relative;
+    right: 21px;
+}
+
+.related-websites h2 {
+    font-size: 14px;
+    color: #70757a;
+    margin: 16px 0px 6px 0px;
+    line-height: initial;
+}
+
+.related-websites p {
+    display: inline-block;
+    font-size: 20px;
+    color: #222;
+    width: 520px;
+    margin-bottom: 14px;
+    line-height: initial;
+}
+
+.related-websites h3 {
+    font-size: 14px;
+    margin-top: 0px
+}
+
+.related-websites a {
+    display: inline-block;
+    width: 72px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+}
+
+.related-websites img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+
+#view-more {
+    float: right;
+    width: auto;
+    margin: 8px 18px 0 0;
+    color: #70757a;
+}
+
+/* Result w/ Related Searches */
+
+.related-searches h2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.related-searches ul {
+    display: inline-block;
+}
+
+.related-searches li {
+    padding: 6px 32px 6px 0px;
+}
+
+/* Page Navigation Footer */
+
+#page-selection {
+    width: 616px;
+}
+
+table {
+    margin: 30px auto 30px;
+}
+
+td {
+    text-align: center;
+    vertical-align: top;
+}
+
+#nav-end {
+    text-align: right;
+}
+
+#page-selection a {
+    color: #4285f4;
+}
+
+.nav-logo {
+    background: url(https://www.google.hr/images/nav_logo242.png) no-repeat;
+    height: 40px;
+    display: block;
+}
+
+.start {
+    width: 28px;
+    background-position: -24px 0;
+}
+
+.mid {
+    width: 20px;
+    background-position: -74px 0;
+}
+
+.current {
+    background-position: -53px 0;
+}
+
+.end {
+    width: 82px;
+    background-position: -96px 0;
+}
+
+/****** FOOTER *********/
+
+#bottom-bar {
+    background-color: #f2f2f2;
+    color: #5f6368;
+    min-width: 1101px;
+}
+
+.location a, .bottom-nav a {
+    color: #5f6368;
+}
+
+.location a:hover, .bottom-nav a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.location {
+    font-size: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    padding: 9px 0 9px 166px;
+}
+
+#specific-location {
+    border-left: 1px solid rgb(228, 228, 228);
+    margin-left: 13px;
+    padding: 4px 0px 4px 30px;
+    font-size: 14px;
+}
+
+#postcode {
+    position: relative;
+    color: #333;
+}
+
+#postcode::before {
+    position: absolute;
+    content: "";
+    left: -14px;
+    top: 3px;
+    background:rgb(158, 158, 158);;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.location p {
+    display: inline-block;
+    line-height: initial;
+}
+
+.bottom-nav {
+    padding: 13px 0px 13px 166px;
+}
+
+.bottom-nav a {
+    margin-right: 27px;
+}
