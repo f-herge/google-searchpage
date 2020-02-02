@@ -1,7 +1,7 @@
 # Build the Google.com search results page using HTML and CSS
 
 Extension of my last project (https://github.com/f-herge/google-homepage) replicating the Google.com landing page. 
-There is a lot more varied content on the webpage so the project was more complex and provided solid HTML and CSS experience.
+There is a lot of varied content on this webpage, so the project was more complex and provided solid HTML and CSS experience.
 
 I aimed to write clear semantic HTML, and learnt about writing HTML with accessibility in mind.
 
